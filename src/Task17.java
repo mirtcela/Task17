@@ -10,6 +10,7 @@ public class Task17 {
             try (FileWriter fw = new FileWriter("C:\\test\\writetest.txt")) {
                 do {
                     str = br.readLine();
+                    str = str+"\r\n";
                     fw.write(str);}
                 while (!(str = br.readLine()).equals("стоп")) ;
             }
